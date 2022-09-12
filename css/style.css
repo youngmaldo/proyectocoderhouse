@@ -1,0 +1,190 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: black;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    background-image: url(../imagenes/desarrolloweb.png);
+    background-size: cover;
+
+}
+footer{
+    background-color: #066899;
+    display:grid;
+padding: 1em 0;
+text-align: center;
+margin-top: auto;
+}
+header{
+    background-image: url(../imagenes/Banner.jpg);
+    background-size: cover;
+    height: 150px;
+    background-color: #066899;
+}
+/* INDEX*/
+.header__navegador{
+    display: inline-block;
+    border: black solid 5px;
+    background-color: aliceblue;
+}
+.conteiner__header{
+    text-align: right;
+}
+#Menu{
+    margin: 0 auto;
+    height: 40px;
+    overflow: hidden;
+    background-color: #98d;
+}
+.body--index{
+    background-color: black;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    background-image: url(../imagenes/desarrolloweb.png);
+    background-size: cover;
+
+}
+.footer--index{
+    display:grid;
+padding: 1em 0;
+text-align: center;
+margin-top: auto;
+}
+a{
+    color: rgb(17, 29, 131);
+}
+p{
+    color: yellow  ;
+}
+/* CONTACTO*/
+.body__contacto_div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas: "contacto-uno contacto-dos contacto-tres";
+}
+/* SOBRE MI*/
+.body__sobremi{
+    background-color: black;
+}
+.sobremi--grid{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "sobremi"
+    "descripcion--sobremi";}
+.descripcion--sobremi{
+    justify-content: center;
+}
+/*PORTAFOLIO*/
+.body__portafolio{
+    background-color: black;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+#footer--portafolio{
+    display:grid;
+padding: 1em 0;
+text-align: center;
+margin-top: auto;
+}
+.container_div_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "uno dos tres"
+    "cuatro cuatro cuatro";
+    gap: 10px;
+    
+    
+}
+.uno{
+    grid-area: uno;
+}
+.dos{
+    grid-area: dos;
+}
+.tres{
+    grid-area: tres;
+}
+.cuatro{
+    display: flex;
+    justify-content: center;
+    grid-area: cuatro;
+}
+/* SERVICIOS */
+
+/*media queries*/
+@media screen and (max-width: 768px){
+    .body__contacto_div{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "contacto-uno"
+        "contacto-dos"
+        "contacto-tres";
+    }
+    .container_div_grid{
+        display: grid;
+       
+        gap: 10px;
+        justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "uno"
+    "dos"
+    "tres"
+    "cuatro"
+    "cuatro"
+    "cuatro";
+}
+.cuatro{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: cuatro;
+}
+
+}
+@media screen and (max-width: 576px){
+    .body__contacto_div{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "contacto-uno"
+        "contacto-dos"
+        "contacto-tres";
+    }
+    .container_div_grid{
+            display: grid;
+           
+            gap: 10px;
+            justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "uno"
+        "dos"
+        "tres"
+        "cuatro"
+        "cuatro"
+        "cuatro";
+    }
+    .cuatro{
+        display: flex;
+        flex-wrap: wrap;
+        grid-area: cuatro;
+    }
+    
+}
