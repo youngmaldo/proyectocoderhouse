@@ -2,8 +2,30 @@
     margin: 0%;
     padding: 0%;
 }
-body{
-    background-color: black;
+.nav-propio{
+    background-image: url(../imagenes/Banner.jpg);
+    background-size: cover;
+    height: 150px;
+
+}
+.nav-propio-letras{
+    border: black 2px solid ;
+    color: red !important;
+    background-color: white;
+
+}
+.navbar-toggler-icon{
+    background-color: white;
+}
+.nav-propia-footer{
+    justify-content: center;
+    color: white;
+}
+.container-propio-portafolio{
+    min-height: 100vh;
+}
+
+body{ background-color: black;
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
